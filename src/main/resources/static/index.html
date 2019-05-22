@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $.get("/me", function(data) {
+                console.log("/me response:", data);
+                $('#id').text(data.id);
+                $('#email').text(data.email);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Hello, World!</h1>
+<table>
+    <tr><td><strong>User ID</strong></td><td id="id"></td></tr>
+    <tr><td><strong>Email</strong></td><td id="email"></td></tr>
+</table>
+</body>
+</html>

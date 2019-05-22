@@ -1,0 +1,17 @@
+# things required for spring's built in SSO.
+security.oauth2:
+  client:
+    clientId: lnVX0xIwWuHfULGWHuq8t1v2cp0UGIgD
+    clientSecret: TR4xOjhnnCTJBhCaS0XyMnmMDXt4xFNmmokXOnNw-rNNPAGKfp3PGpug-w4EI1qm
+    accessTokenUri: https://b-ng.auth0.com/oauth/token
+    userAuthorizationUri: https://b-ng.auth0.com/authorize
+    scope: email,openid
+  resource:
+    userInfoUri: https://b-ng.auth0.com/userinfo
+
+# custom properties, added for the UserInfoResolver
+b-ng.jwks.url: https://b-ng.auth0.com/.well-known/jwks.json
+
+# auth0 test account
+# user: test@example.com
+# pass: P4ssw0rd
